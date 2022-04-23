@@ -55,8 +55,8 @@ a:hover{
 .row{
   color: white;
   display: flex;
-  flex-direction: row;
-  height: 50%;
+  align-items: center;
+  height: 70%;
   
   
 }
@@ -71,7 +71,7 @@ a:hover{
 
 span{
   color: aqua;
-  font-size: 40px;
+  font-size: 50px;
   cursor: default;
  
 }
