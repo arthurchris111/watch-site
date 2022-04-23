@@ -56,9 +56,8 @@ a:hover{
   color: white;
   display: flex;
   align-items: center;
-  height: 70%;
-  
-  
+  height: 75%;
+   
 }
 
 .col{
@@ -70,10 +69,10 @@ a:hover{
 }
 
 span{
-  color: aqua;
+  color: rgb(150, 248, 248);
   font-size: 50px;
   cursor: default;
- 
+  
 }
 
 p{
@@ -96,6 +95,7 @@ button{
 
 
 button:hover{
+  transform: scale(1.1);
   animation: colorful;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
