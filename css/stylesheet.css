@@ -6,7 +6,7 @@
   }
 
 .container{
-  background-image: url("https://images.pexels.com/photos/23474/pexels-photo.jpg?cs=srgb&dl=pexels-donald-tong-23474.jpg&fm=jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 1.9),rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/1342609/pexels-photo-1342609.jpeg?cs=srgb&dl=pexels-the-lazy-artist-gallery-1342609.jpg&fm=jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -19,7 +19,7 @@
 .logo{
   height: 80px;
   width:80px;
-  cursor: pointer;
+  cursor: default;
 }
 
 .navbar{
@@ -27,6 +27,7 @@
   align-items: center;
   justify-content: center;
   padding: 30px;
+ 
   
 }
 
@@ -48,14 +49,15 @@ nav{
 
 a:hover{
   color: aqua;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .row{
   color: white;
   display: flex;
   flex-direction: row;
-  height: 60%;
+  height: 50%;
+  
   
 }
 
@@ -63,21 +65,22 @@ a:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-basis: 50%;
+  flex-basis: 60%;
   padding: 30px;
 }
 
 span{
   color: aqua;
   font-size: 40px;
-  
-
+  cursor: default;
+ 
 }
 
 p{
   line-height: 21px;
   font-family: 'Signika Negative', sans-serif;
-  margin-top: 20px;
+  margin-top: 30px;
+  cursor: default;
 }
 
 button{
@@ -87,6 +90,8 @@ button{
   border-radius: 15px;
   font-size: 15px;
   border: none;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 
@@ -100,13 +105,40 @@ button:hover{
   100%{background-color: rgb(155, 175, 169)}
 }
 
-.card{
-  width: 200px;
+.card1, .card2, .card3, .card4{
+  width: 250px;
   height: 230px;
   display: inline-block;
-  border-radius: 10px;
   box-sizing: border-box;
   padding: 15px 25px;
   margin: 10px 15px;
-  border: solid 2px white;
+  background-image: url("");
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card1{
+  background-image: url("https://images.pexels.com/photos/9878309/pexels-photo-9878309.jpeg?cs=srgb&dl=pexels-antony-trivet-9878309.jpg&fm=jpg");
+  border-top-left-radius: 20px;
+}
+
+.card2{
+  background-image: url("https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg");
+  border-top-right-radius: 20px;
+}
+
+.card3{
+  background-image: url("https://images.pexels.com/photos/592815/pexels-photo-592815.jpeg?cs=srgb&dl=pexels-alex-carollo-592815.jpg&fm=jpg");
+  border-bottom-left-radius: 20px;
+}
+
+.card4{
+  background-image: url("https://images.pexels.com/photos/9561286/pexels-photo-9561286.jpeg?cs=srgb&dl=pexels-quang-viet-nguyen-9561286.jpg&fm=jpg");
+  border-bottom-right-radius: 20px;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover{
+  transform: translateY(-10px);
 }
